@@ -14,7 +14,8 @@ Tested on GNU/Linux
 import os
 import sys
 
-#Open the file provided, catch exceptions if len(sys.argv) > 1:
+#Open the file provided, catch exceptions
+if len(sys.argv) > 1:
     try:
         iplist = open(sys.argv[1],'r')
     except:
